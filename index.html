@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BREAKOUT GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src = "img/logo.png" alt = "logo" id = "logo" width="200px">
+    </header>
+    <h1 id = "headline"></h1>
+    <section>
+        <div id = "leftSide">
+            <h3>Difficulty</h3>
+            <ul>
+                <li onclick="difficulty('easy')">Easy</li>
+                <li onclick="difficulty('medium')">Medium</li onclick="difficulty('medium')">
+                <li onclick="difficulty('hard')">Hard</li>
+                <li onclick="difficulty('impossible')">Impossible</li>
+            </ul>
+        </div>
+        <canvas id="board" height="320px" width="480px"></canvas>
+        <div id = "rightSide">
+            <h3>Highest Score</h3>
+            <h3 id = "highestScore">0</h3>
+            <h3>My Score</h3>
+            <h3 id = "myScore">0</h3>
+        </div>
+    </section>
+    <footer>
+        <h5>Trademark by @Hacktiv8</h5>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
